@@ -1,6 +1,6 @@
 # Sparql Queries Cookbook
 
-## Countries in EU with their associated heads of states of info about them
+## Countries in EU with their associated heads of states and info about them
 ```sql
 SELECT 
   ?country
