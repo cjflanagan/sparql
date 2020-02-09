@@ -2,7 +2,15 @@
 
 ## Countries in EU with their associated heads of states of info about them
 ```sql
-SELECT ?country ?countryLabel ?capitalLabel ?populationcountry ?populationcapital ?headofstate ?headofstateLabel ?headofstate_sexLabel
+SELECT 
+  ?country
+  ?countryLabel
+  ?capitalLabel
+  ?populationcountry
+  ?populationcapital
+  ?headofstate
+  ?headofstateLabel
+  ?headofstate_sexLabel
 WHERE 
 {
   ?country wdt:P463 wd:Q458.
