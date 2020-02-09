@@ -5,7 +5,7 @@ SELECT ?country ?countryLabel ?capitalLabel ?populationcountry ?populationcapita
 WHERE 
 {
   ?country wdt:P463 wd:Q458.
-  # Country #member of # European Union
+  // Country // member of // European Union
   ?country wdt:P36 ?capital.
   ?country wdt:P1082 ?populationcountry.
   ?capital wdt:P1082 ?populationcapital.
