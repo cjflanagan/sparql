@@ -23,3 +23,13 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "   [AUTO_LANGUAGE],en". }
 }
 ```
+## Companies in Dow Jones Industrial Index, their CEO's and where they went to school.
+```sql
+SELECT DISTINCT ?company ?companyLabel ?ceoLabel ?schoolLabel
+WHERE {
+    ?company wdt:P361 wd:Q180816. # Q180816=DJIA,  Q242345=S&P500
+    ?company wdt:P169 ?ceo .
+    ?ceo wdt:P69 ?school.
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "   [AUTO_LANGUAGE],en". }
+}
+```
